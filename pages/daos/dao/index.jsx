@@ -26,13 +26,7 @@ export default function DAO() {
 	let id = "" //id from url
 
 	useEffect(() => {
-		const fetchData = async () => {
-			await sleep(200)
-			if (contract !== null) {
-				fetchContractData()
-			}
-		}
-		fetchData()
+		fetchContractData();
 	}, [contract])
 
 	setInterval(function () {

@@ -22,13 +22,7 @@ export default function DAOs() {
 	}
 
 	useEffect(() => {
-		const fetch = async () => {
-			await sleep(200)
-			if (contract !== null) {
-				fetchContractData()
-			}
-		}
-		fetch()
+		fetchContractData()
 	}, [contract])
 
 	setInterval(function () {

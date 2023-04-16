@@ -89,13 +89,7 @@ export default function GrantIdeas() {
 	}
 
 	useEffect(() => {
-		const fetch = async () => {
-			await sleep(150);
-			if (contract !== null) {
-				fetchContractData();
-			}
-		};
-		fetch();
+		fetchContractData();
 	}, [contract]);
 
 	useEffect(() => {
